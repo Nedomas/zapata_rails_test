@@ -20,6 +20,13 @@ class RobotToTest < Object
     has_children
   end
 
+  def testing_empty_method
+  end
+
+  def testing_hash(options_hash)
+    options_hash = { one: :thing, led: :to_another }
+  end
+
   def show_name_with_prefix(prefix)
     "#{prefix}_#{@name}"
   end

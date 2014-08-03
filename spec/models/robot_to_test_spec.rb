@@ -12,6 +12,14 @@ describe RobotToTest do
     expect(robot_to_test.testing_true_and_false(true, false)).to eq('FILL IN THIS BY HAND')
   end
 
+  it '#testing_empty_method' do
+    expect(robot_to_test.testing_empty_method).to eq('FILL IN THIS BY HAND')
+  end
+
+  it '#testing_hash' do
+    expect(robot_to_test.testing_hash({:one=>:thing, :led=>:to_another})).to eq('FILL IN THIS BY HAND')
+  end
+
   it '#show_name_with_prefix' do
     expect(robot_to_test.show_name_with_prefix('funky')).to eq('FILL IN THIS BY HAND')
   end
