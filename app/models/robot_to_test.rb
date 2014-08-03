@@ -1,5 +1,7 @@
 class RobotToTest < Object
-  def initialize(name, shop_id)
+  def initialize(name, shop_id, sex, has_children)
+    has_children = true
+    random_false_value = false
     @name = name
     @shop_ids = [1, 2, 3]
     @code = :some_code
@@ -9,8 +11,13 @@ class RobotToTest < Object
   end
 
   def show_shop_ids
+    shop_id = 11
     code = :some_other_code
     p @shop_ids
+  end
+
+  def testing_true_and_false(has_children, random_false_value)
+    has_children
   end
 
   def show_name_with_prefix(prefix)
