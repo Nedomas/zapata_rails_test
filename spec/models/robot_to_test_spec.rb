@@ -2,10 +2,18 @@ require 'rails_helper'
 
 describe RobotToTest do
 
-  let(:robot_to_test) { RobotToTest.new('John3000', 11, Zapata::MissingVariable.new(:never_set, :sex), true) }
+  let(:RobotToTest) { RobotToTest.new('John3000', 11, Zapata::MissingVariable.new(:never_set, :sex), true) }
 
   it '#show_shop_ids' do
     expect(robot_to_test.show_shop_ids).to eq('FILL IN THIS BY HAND')
+  end
+
+  it '#some_helping_method' do
+    expect(robot_to_test.some_helping_method).to eq('FILL IN THIS BY HAND')
+  end
+
+  it '#test_method_return_as_arg' do
+    expect(robot_to_test.test_method_return_as_arg('hello')).to eq('FILL IN THIS BY HAND')
   end
 
   it '#testing_true_and_false' do
