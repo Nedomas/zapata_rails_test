@@ -20,10 +20,6 @@ describe RobotToTest do
     expect(robot_to_test.testing_true_and_false(true, false)).to eq(true)
   end
 
-  it '#testing_empty_method' do
-    expect(robot_to_test.testing_empty_method).to eq()
-  end
-
   it '#testing_hash' do
     expect(robot_to_test.testing_hash({:one=>:thing, :led=>:to_another})).to eq({:one=>:thing, :led=>:to_another})
   end
