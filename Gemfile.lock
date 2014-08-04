@@ -7,6 +7,8 @@ PATH
       pry
       pry-stack_explorer
       rails
+      rspec-rails
+      slop
 
 GEM
   remote: https://rubygems.org/
