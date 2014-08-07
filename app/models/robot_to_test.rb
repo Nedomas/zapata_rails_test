@@ -11,6 +11,11 @@ class RobotToTest < Object
 
     run_helping_method = some_helping_method
     test_method_return_as_arg(run_helping_method)
+    context = Context.new(user: User.find(1))
+  end
+
+  def test_context(context)
+    context.user
   end
 
   def show_shop_ids
