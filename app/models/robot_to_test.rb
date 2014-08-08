@@ -1,4 +1,6 @@
-class RobotToTest < Object
+class RobotToTest
+  attr_accessor :name
+
   def initialize(name, shop_id, sex, has_children)
     has_children = true
     random_false_value = false
@@ -12,6 +14,12 @@ class RobotToTest < Object
     run_helping_method = some_helping_method
     test_method_return_as_arg(run_helping_method)
     context = Context.new(user: User.find(1))
+    @some_ivar_arg = 'random ivar value'
+    test_ivar(@some_ivar_arg)
+  end
+
+  def test_ivar(some_ivar_arg)
+    'Got it'
   end
 
   def test_context(context)
