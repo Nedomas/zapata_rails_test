@@ -1,4 +1,4 @@
-require '/Users/domas/Developer/zapata_rails_test/spec/rails_helper'
+require 'rails_helper'
 
 describe PersonToAnalyze do
 

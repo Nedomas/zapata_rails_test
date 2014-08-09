@@ -58,4 +58,19 @@ class RobotToTest
   def whats_my_code(code)
     code
   end
+
+  private
+  def dont_test_privates
+    'Do not show me'
+  end
+
+  public
+  def test_public
+    'Do show me'
+  end
+
+  protected
+  def dont_test_protected
+    'Do not show me'
+  end
 end
